@@ -1,11 +1,13 @@
 import os 
 
 def turn_off_wifi():
-    cmd = 'ifconfig wx down'
+    cmd = 'ifconfig wlan0 down'
+    print("turn off wifi")
     os.system(cmd)
 
 def turn_on_wifi():
-    cmd = 'ifconfig wx up'
+    cmd = 'ifconfig wlan0 up'
+    print("turn on wifi")
     os.system(cmd)
 
 def generate_wpa(SSID, password):
