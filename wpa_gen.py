@@ -1,12 +1,12 @@
 import os 
 
 def turn_off_wifi():
-    cmd = 'ifconfig wlan0 down'
+    cmd = 'sudo ifconfig wlan0 down'
     print("turn off wifi")
     os.system(cmd)
 
 def turn_on_wifi():
-    cmd = 'ifconfig wlan0 up'
+    cmd = 'sudo ifconfig wlan0 up'
     print("turn on wifi")
     os.system(cmd)
 
